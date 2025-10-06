@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Dev Portfolio - Isabelly</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner principal -->
+    <section id="banner">
+        <div class="container">
+            <h2 class="tech-greeting">Olá, eu sou <span class="neon">Isabelly</span></h2>
+            <div class="profile-section">
+                <img src="isa.jpeg" alt="Foto de Isabelly" class="profile-img">
+                <div class="profile-text">
+                    <h2>Meu nome é Isabelly e sou uma aluna do Ensino Médio do Colégio Basilio de Lucca. Atualmente, estou no 3º ano e programei vários projetos inspirados em animes durante esse ano. Esses projetos são exibidos neste portfólio tecnológico.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <h1 class="title">Meus Projetos</h1>
+        <nav class="tech-nav">
+            <ul>
+                <li><button class="tab-btn active" onclick="openTab(event, 'projetos-iniciais')">Projetos Iniciais</button></li>
+                <li><button class="tab-btn" onclick="openTab(event, 'projetos-avancados')">Projetos Avançados</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Aba 1: Projetos Iniciais (os 3 originais + 3 novos para totalizar 6 na aba) -->
+        <div id="projetos-iniciais" class="tab-content active">
+            <section class="project" id="projeto-1">
+                <h2 class="project-title">My Hero Academy</h2>
+                <p class="project-description">Um projeto de site que explica sobre a UA e mostra alguns dos nossos heróis ou vilões queridos de MY HERO ACADEMY, além de uma prévia da introdução da história desse anime.</p>
+                <img src="Ua apresent.png" alt="Prévia do projeto My Hero Academy" class="project-img" onclick="openModal('Ua apresent.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/Site-escola.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-2">
+                <h2 class="project-title">CrunchyrollAnimes</h2>
+                <p class="project-description">Um site interativo que mostra referências para os amantes de mangás e animes. O site consiste em uma aba da Crunchyroll com mangás famosos e queridos pelos fãs. Ao abrir o site, as pessoas terão oportunidades de conhecer a CrunchyrollAnimes, que proporciona a chance de conhecer melhor a coleção de animes favoritados pela galera.</p>
+                <img src="crunchy.png" alt="Prévia do projeto CrunchyrollAnimes" class="project-img" onclick="openModal('crunchy.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/alura.site-4.0.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-3">
+                <h2 class="project-title">Hollow Slayers</h2>
+                <p class="project-description">Esse site é uma introdução de jogo interativa onde há uma interface de começo de jogo. O nome do jogo é fictício, ou seja, não existe de verdade. Para mexer, é utilizado o mouse, e quando o mouse faz a função de iniciar a introdução dos personagens, os personagens passam de acordo com a música. Há 6 opções de personagens.</p>
+                <img src="jogo.png" alt="Prévia do projeto Hollow Slayers" class="project-img" onclick="openModal('jogo.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/jogohollow.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <!-- Novos projetos adicionados (3 para esta aba, totalizando 6) -->
+            <section class="project" id="projeto-4">
+                <h2 class="project-title">Google Colab</h2>
+                <p class="project-description">Um site que mostra os dados da pesquisa feita com o intuito de pesquisar a saúde e bem-estar</p>
+                <img src="ti.png" alt="Prévia do projeto Demon Slayer Simulator" class="project-img" onclick="openModal('ti.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/projeto--3-tri/blob/b7a1fce70317898fb1cb6e765d9254830c166b27/An%C3%A1lise.ipynb" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-5">
+                <h2 class="project-title">Colab</h2>
+                <p class="project-description">Um site do google Colab que visa demonstrar desafios propostos pelo alura.</p>
+                <img src="oi.png" alt="Prévia do projeto One Piece Treasure Hunt" class="project-img" onclick="openModal('oi.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/projeto--3-tri/blob/b7a1fce70317898fb1cb6e765d9254830c166b27/An%C3%A1lise.ipynb" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-6">
+                <h2 class="project-title">Agrinho</h2>
+                <p class="project-description"> Um projeto desenvolvido para promover ativamente a campanha do Agrinho de 2025.</p>
+                <img src="dek.png" alt="Prévia do projeto Attack on Titan Wall Defense" class="project-img" onclick="openModal('dek.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/2-tri-agrinho.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+        </div>
+
+        <!-- Aba 2: Projetos Avançados (6 novos projetos) -->
+        <div id="projetos-avancados" class="tab-content">
+            <section class="project" id="projeto-7">
+                <h2 class="project-title">Naruto Ninja Academy</h2>
+                <p class="project-description">Academia de ninjas com sistema de níveis e jutsus personalizáveis. Integra API externa para quotes aleatórias de Naruto e animações de chakra com WebGL.</p>
+                <img src="naruto-preview.png" alt="Prévia do projeto Naruto Ninja Academy" class="project-img" onclick="openModal('naruto-preview.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/naruto-academy.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-8">
+                <h2 class="project-title">Jujutsu Kaisen Curse Tracker</h2>
+                <p class="project-description">Rastreador de maldições com dashboard responsivo usando React-like componentes em vanilla JS. Inclui gráficos de progresso e tema noturno automático.</p>
+                <img src="jujutsu-preview.png" alt="Prévia do projeto Jujutsu Kaisen Curse Tracker" class="project-img" onclick="openModal('jujutsu-preview.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/jujutsu-tracker.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-9">
+                <h2 class="project-title">Fullmetal Alchemist Inventory</h2>
+                <p class="project-description">Sistema de inventário alquímico com transmutações simuladas. Usa localStorage para salvar itens e animações de partículas para efeitos visuais.</p>
+                <img src="fma-preview.png" alt="Prévia do projeto Fullmetal Alchemist Inventory" class="project-img" onclick="openModal('fma-preview.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/fma-inventory.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-10">
+                <h2 class="project-title">Death Note Case Solver</h2>
+                <p class="project-description">Ferramenta para resolver casos como L, com IA simples (baseada em regras) para deduções. Interface com timer e modo escuro para imersão noturna.</p>
+                <img src="deathnote-preview.png" alt="Prévia do projeto Death Note Case Solver" class="project-img" onclick="openModal('deathnote-preview.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/deathnote-solver.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-11">
+                <h2 class="project-title">Spy x Family Mission Generator</h2>
+                <p class="project-description">Gerador de missões aleatórias com personagens jogáveis. Inclui elementos de espionagem com criptografia básica e compartilhamento via URL.</p>
+                <img src="spyfamily-preview.png" alt="Prévia do projeto Spy x Family Mission Generator" class="project-img" onclick="openModal('spyfamily-preview.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/spyfamily-missions.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+
+            <section class="project" id="projeto-12">
+                <h2 class="project-title">Chainsaw Man Devil Hunter</h2>
+                <p class="project-description">Simulador de caçador de demônios com combate em tempo real usando Gamepad API. Gráficos pixel art e sistema de upgrades persistente.</p>
+                <img src="chainsaw-preview.png" alt="Prévia do projeto Chainsaw Man Devil Hunter" class="project-img" onclick="openModal('chainsaw-preview.png')">
+                <a href="https://github.com/Portgas-d-Isabelly/chainsaw-hunter.git" class="project-link">Veja o projeto no GitHub</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p class="tech-footer">Made with passion for anime and code | © 2023 Isabelly</p>
+    </footer>
+
+    <!-- Modal para exibir imagens em tamanho maior -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+    </div>
+
+    <script>
+        // Função para abrir o modal com a imagem
+        function openModal(imagemUrl) {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            modal.style.display = 'block';
+            modalImg.src = imagemUrl;
+            modalImg.alt = 'Imagem ampliada do projeto';
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById('image-modal').style.display = 'none';
+        }
+
+        // Fechar modal com tecla ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Sistema de abas simples
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
